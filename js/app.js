@@ -15,6 +15,7 @@ let symbols= ["fa-diamond","fa-paper-plane-0","fa-anchor","fa-bolt","fa-cube","f
 
 
 function makeDeck(array){
+	shuffle(array);
 	//create reference to the UL
 	var list= document.querySelector('.deck');
 
