@@ -12,26 +12,30 @@
 
 let symbols= ["fa-diamond","fa-paper-plane-0","fa-anchor","fa-bolt","fa-cube","fa-leaf","fa-bicycle","fa-bomb",
 			  "fa-diamond","fa-paper-plane-0","fa-anchor","fa-bolt","fa-cube","fa-leaf","fa-bicycle","fa-bomb"];
-const theDeck= $(".deck");
+
 
 function makeDeck(array){
-	//creates list element
-	var list= document.getElementById('cardDeck');
+	//create reference to the UL
+	var list= document.querySelector('.deck');
 
 	for(var i=0; i< array.length; i++){
-		//create list item
+		//create list and icon elements
 		var item= document.createElement('li');
-		//set its content
-		item.appendChild(document.createTextNode(array[i]));
+		var icon= document.createElement('i');
+		//nesting icons inside cards
+		item.appendChild(icon);
 		//add it to the list
 		list.appendChild(item);
-		//add a class
-		item.setAttribute('class','card');
+		//add in the classes
+		item.setAttribute('class','card')
+		icon.setAttribute('class',(array[i]));
+		icon.classList.add('fa');
 	}
+	//finally, return the constructed list
 	return list;
 }
-//add the contents of the array
-document.getElementById('cardDeck').appendChild(makeDeck(symbols));
+//call it using the symbols array!
+makeDeck(symbols);
 
 
 // Shuffle function from http://stackoverflow.com/a/2450976
