@@ -10,6 +10,7 @@
  *   - add each card's HTML to the page
  */
 
+let symbols= ["fa-diamond","fa-paper-plane-0","fa-anchor","fa-bolt","fa-cube","fa-leaf","fa-bicycle","fa-bomb"];
 // Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
