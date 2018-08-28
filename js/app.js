@@ -55,7 +55,7 @@ function shuffle(array) {
 }
 
 function respondToTheClick(evt){
-	console.log("a card was clicked" + evt.target.innerHTML);
+	$( event.target ).toggleClass("open").toggleClass("show");
 }
 
 theDeck.addEventListener('click', respondToTheClick);
