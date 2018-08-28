@@ -54,6 +54,12 @@ function shuffle(array) {
     return array;
 }
 
+function respondToTheClick(evt){
+	console.log("a card was clicked" + evt.target.innerHTML);
+}
+
+theDeck.addEventListener('click', respondToTheClick);
+
 /*
  * set up the event listener for a card. If a card is clicked:
  *  - display the card's symbol (put this functionality in another function that you call from this one)
