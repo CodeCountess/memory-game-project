@@ -9,7 +9,7 @@
  *   - loop through each card and create its HTML
  *   - add each card's HTML to the page
  */
-
+const theDeck= document.querySelector('.deck');
 let symbols= ["fa-diamond","fa-paper-plane-0","fa-anchor","fa-bolt","fa-cube","fa-leaf","fa-bicycle","fa-bomb",
 			  "fa-diamond","fa-paper-plane-0","fa-anchor","fa-bolt","fa-cube","fa-leaf","fa-bicycle","fa-bomb"];
 
