@@ -65,7 +65,7 @@ function openCardChecker(){
 		openCards.pop([-1]);
 		openCards.lenght=2;
 	}
-	console.log(openCards[0].dataset.card);
+	console.log(openCards[0].dataset.card,openCards[1].dataset.card);
 	console.log(openCards.length);
 }
 
