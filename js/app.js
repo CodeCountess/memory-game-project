@@ -4,7 +4,7 @@ const eachCard= document.querySelectorAll('.card');
 let symbols= ["fa-diamond","fa-paper-plane-o","fa-anchor","fa-bolt","fa-cube","fa-leaf","fa-bicycle","fa-bomb",
 			  "fa-diamond","fa-paper-plane-o","fa-anchor","fa-bolt","fa-cube","fa-leaf","fa-bicycle","fa-bomb"];
 
-let openedCards= [];
+let openCards= [];
 
 function makeDeck(array){
 	shuffle(array);
@@ -48,14 +48,19 @@ function shuffle(array) {
 
 function cardClick(evt){
 	displayCardSymbol();
-	//openedCards.push($( event.target ));
-	//console.log(openedCards);
+	openCardChecker();
 }
 
 theDeck.addEventListener('click', cardClick);
 
 function displayCardSymbol(){
 	$( event.target ).toggleClass("open").toggleClass("show");
+}
+
+function openCardChecker(){
+	//adds cards to the array
+	openCards.push($(event.target));
+	console.log(openCards);
 }
 
 
