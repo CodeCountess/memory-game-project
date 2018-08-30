@@ -68,10 +68,14 @@ function openCardChecker(){
 
 	if(openCards.length==2){
 		if(openCards[0].dataset.card == openCards[1].dataset.card){
+			console.log(openCards[0].dataset.card,openCards[1].dataset.card);
 			console.log("Matchmaker Matchmaker make me a match!");
 		} else{
+			console.log(openCards[0].dataset.card,openCards[1].dataset.card);
 			console.log("better luck next time darlin!");
+			
 		}
+		openCards= [];
 	}
 	
 }
