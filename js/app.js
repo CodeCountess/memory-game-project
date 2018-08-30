@@ -58,15 +58,23 @@ function displayCardSymbol(){
 }
 
 function openCardChecker(){
-	//adds cards to the array
+	
 	openCards.unshift(event.target);
 
 	if(openCards.length>2){
 		openCards.pop([-1]);
 		openCards.lenght=2;
 	}
-	console.log(openCards[0].dataset.card,openCards[1].dataset.card);
-	console.log(openCards.length);
+
+	if(openCards.length==2){
+		if(openCards[0].dataset.card == openCards[1].dataset.card){
+			console.log("Matchmaker Matchmaker make me a match!");
+		} else{
+			console.log("better luck next time darlin!");
+		}
+	}
+	
 }
+	
 
 
