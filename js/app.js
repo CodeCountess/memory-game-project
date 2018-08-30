@@ -60,7 +60,13 @@ function displayCardSymbol(){
 function openCardChecker(){
 	//adds cards to the array
 	openCards.unshift(event.target);
+
+	if(openCards.length>2){
+		openCards.pop([-1]);
+		openCards.lenght=2;
+	}
 	console.log(openCards[0].dataset.card);
+	console.log(openCards.length);
 }
 
 
