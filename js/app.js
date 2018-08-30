@@ -59,7 +59,7 @@ function displayCardSymbol(){
 
 function openCardChecker(){
 	//adds cards to the array
-	openCards.push($(event.target));
+	openCards.push(event.target);
 	console.log(openCards);
 }
 
