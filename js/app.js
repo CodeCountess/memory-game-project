@@ -19,7 +19,8 @@ function makeDeck(array){
 		//add it to the list
 		list.appendChild(item);
 		//add in the classes
-		item.setAttribute('class','card')
+		item.setAttribute('class','card');
+		item.setAttribute('data-card',(array[i]));
 		icon.setAttribute('class',(array[i]));
 		icon.classList.add('fa');
 	}
