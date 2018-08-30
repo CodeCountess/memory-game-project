@@ -1,5 +1,6 @@
 
 const theDeck= document.querySelector('.deck');
+const eachCard= document.querySelectorAll('.card');
 let symbols= ["fa-diamond","fa-paper-plane-o","fa-anchor","fa-bolt","fa-cube","fa-leaf","fa-bicycle","fa-bomb",
 			  "fa-diamond","fa-paper-plane-o","fa-anchor","fa-bolt","fa-cube","fa-leaf","fa-bicycle","fa-bomb"];
 
