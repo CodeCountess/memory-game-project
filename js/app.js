@@ -58,8 +58,8 @@ function displayCardSymbol(){
 }
 
 function openCardChecker(){
-	
-	openCards.unshift(event.target);
+	let userClick= event.target;
+	openCards.unshift(userClick);
 
 	if(openCards.length>2){
 		openCards.pop([-1]);
