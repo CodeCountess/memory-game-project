@@ -47,7 +47,7 @@ function shuffle(array) {
 }
 
 function cardClick(evt){
-	displayCardSymbol();
+	//displayCardSymbol();
 	openCardChecker();
 }
 
@@ -59,26 +59,50 @@ function displayCardSymbol(){
 
 function openCardChecker(){
 	let userClick= event.target;
-	openCards.unshift(userClick);
 
-	if(openCards.length>2){
-		openCards.pop([-1]);
-		openCards.lenght=2;
-	}
+	if(userClick.classList.contains('open') && userClick.classList.contains('show') ){
+		console.log("You already clicked it!");
 
-	if(openCards.length==2){
-		if(openCards[0].dataset.card == openCards[1].dataset.card){
-			console.log(openCards[0].dataset.card,openCards[1].dataset.card);
-			console.log("Matchmaker Matchmaker make me a match!");
-		} else{
-			console.log(openCards[0].dataset.card,openCards[1].dataset.card);
-			console.log("better luck next time darlin!");
-			
-		}
-		openCards= [];
-	}
-	
+	} else{ //now you can flip the card
+			 displayCardSymbol();
+			//add it to the array
+			openCards.unshift(userClick);
+			//now its ready to be compared- next filter
+			if(openCards.length==2){
+			//once its in there- make sure only 2
+			openCards.length=2;
+		 		if(openCards[0].dataset.card == openCards[1].dataset.card){
+					console.log("Matchmaker Matchmaker make me a match!");
+					//then call the lockOpenMatch function
+			 		}else{
+			 		console.log("better luck next time darlin!");
+			 		//then empty the array, for the next pair
+			 		openCards= [];
+						}
+				} 
+					
+		 } 
 }
+	// openCards.unshift(userClick);
+
+	// if(openCards.length>2){
+	// 	openCards.pop([-1]);
+	// 	openCards.lenght=2;
+	// }
+
+	// if(openCards.length==2){
+	// 	if(openCards[0].dataset.card == openCards[1].dataset.card){
+	// 		console.log(openCards[0].dataset.card,openCards[1].dataset.card);
+	// 		console.log("Matchmaker Matchmaker make me a match!");
+	// 	} else{
+	// 		console.log(openCards[0].dataset.card,openCards[1].dataset.card);
+	// 		console.log("better luck next time darlin!");
+			
+	// 	}
+	// 	openCards= [];
+	// }
+	
+
 	
 
 
