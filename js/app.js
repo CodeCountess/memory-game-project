@@ -5,6 +5,7 @@ let symbols= ["fa-diamond","fa-paper-plane-o","fa-anchor","fa-bolt","fa-cube","f
 			  "fa-diamond","fa-paper-plane-o","fa-anchor","fa-bolt","fa-cube","fa-leaf","fa-bicycle","fa-bomb"];
 
 let openCards= [];
+let matchedCards= [];
 
 function makeDeck(array){
 	shuffle(array);
@@ -73,19 +74,19 @@ function openCardChecker(){
 			openCards.length=2;
 		 		if(openCards[0].dataset.card == openCards[1].dataset.card){
 					console.log("Matchmaker Matchmaker make me a match!");
-					lockOpenMatch();
+					//lockOpenMatch();
 			 		}else{
 			 		console.log("better luck next time darlin!");
 			 		//then empty the array, for the next pair
 			 		openCards= [];
-			 		hideNonMatch();
+			 		//hideNonMatch();
 						}
 				} 
 					
 		 } 
 }
 	
-	
+
 
 	
 
