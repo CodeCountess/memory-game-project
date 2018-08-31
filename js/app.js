@@ -73,8 +73,7 @@ function openCardChecker(){
 			//once its in there- make sure only 2
 			openCards.length=2;
 		 		if(openCards[0].dataset.card == openCards[1].dataset.card){
-					console.log("Matchmaker Matchmaker make me a match!");
-					//lockOpenMatch();
+					lockOpenMatch();
 			 		}else{
 			 		console.log("better luck next time darlin!");
 			 		//then empty the array, for the next pair
@@ -86,6 +85,9 @@ function openCardChecker(){
 		 } 
 }
 	
+function lockOpenMatch(){
+	console.log("Matchmaker Matchmaker make me a match!");
+}
 
 
 	
