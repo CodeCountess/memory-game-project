@@ -86,11 +86,13 @@ function openCardChecker(){
 }
 	
 function lockOpenMatch(){
-	console.log("Matchmaker Matchmaker make me a match!");
 	let card1= openCards.splice(1,1).pop();
 	let card2= openCards.splice(0,1).pop();
 	matchedCards.splice(0,0,card1);
 	matchedCards.splice(0,0,card2);
+	card1.classList.add("match");
+	card2.classList.add("match");
+	console.log("Matchmaker Matchmaker make me a match!");
 	console.log(matchedCards);
 }
 
