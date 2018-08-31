@@ -87,6 +87,9 @@ function openCardChecker(){
 	
 function lockOpenMatch(){
 	console.log("Matchmaker Matchmaker make me a match!");
+	let moveTheseCards= openCards.splice(0,2).shift();
+	matchedCards.splice(0,0,moveTheseCards);
+	console.log(matchedCards.length);
 }
 
 
