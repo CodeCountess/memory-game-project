@@ -75,10 +75,7 @@ function openCardChecker(){
 		 		if(openCards[0].dataset.card == openCards[1].dataset.card){
 					lockOpenMatch();
 			 		}else{
-			 		console.log("better luck next time darlin!");
-			 		//then empty the array, for the next pair
-			 		openCards= [];
-			 		//hideNonMatch();
+			 		hideNonMatch();
 						}
 				} 
 					
@@ -96,6 +93,11 @@ function lockOpenMatch(){
 	console.log(matchedCards);
 }
 
+function hideNonMatch(){
+	console.log("better luck next time darlin!");
+	//empties the array, for the next pair
+	openCards= [];
+}
 
 	
 
