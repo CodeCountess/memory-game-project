@@ -94,9 +94,14 @@ function lockOpenMatch(){
 }
 
 function hideNonMatch(){
-	console.log("better luck next time darlin!");
+	setTimeout(myFunction,250);
 	//empties the array, for the next pair
 	openCards= [];
+}
+
+function myFunction(){
+	alert("better luck next time darlin!");
+	
 }
 
 	
