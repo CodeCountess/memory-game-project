@@ -105,12 +105,18 @@ function clearClasses(){
 	let card2= openCards.splice(0,1).pop();
 	matchedCards.splice(0,0,card1);
 	matchedCards.splice(0,0,card2);
-	card1.classList.toggle("open");
-	card2.classList.toggle("open");
-	card1.classList.toggle("show");
-	card2.classList.toggle("show");
+	// card1.classList.toggle("open");
+	// card2.classList.toggle("open");
+	// card1.classList.toggle("show");
+	// card2.classList.toggle("show");
+	superToggle(card1,"open","show");
+	superToggle(card2,"open","show");
 }
 
-	
-
+// superToggle function by GibboK from https://stackoverflow.com/questions/36544762/vanilla-javascript-is-there-a-way-to-toggle-multiple-css-classes-in-one-stateme
+var superToggle = function(element, class0, class1) {
+  element.classList.toggle(class0);
+  element.classList.toggle(class1);
+}
+//superToggle(card,"open", "show");
 
