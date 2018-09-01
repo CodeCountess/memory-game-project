@@ -112,7 +112,9 @@ var superToggle = function(element, class0, class1) {
 }
 //superToggle(card,"open", "show");
 
-function displayMoves(){
-	
-
+function displayMoves(update){
+	moveCounter.innerHTML =update; 
 }
+
+displayMoves(100);
+displayMoves(15);
