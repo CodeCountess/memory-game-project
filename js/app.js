@@ -97,12 +97,11 @@ function hideNonMatch(){
 	function clearClasses(){
 		let card1= openCards.splice(1,1).pop();
 		let card2= openCards.splice(0,1).pop();
-		matchedCards.splice(0,0,card1);
-		matchedCards.splice(0,0,card2);
 		superToggle(card1,"open","show");
 		superToggle(card2,"open","show");
 	}
 	setTimeout(clearClasses,600);
+
 }
 
 
