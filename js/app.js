@@ -1,6 +1,7 @@
 
 const theDeck= document.querySelector('.deck');
 const eachCard= document.querySelectorAll('.card');
+const moveCounter= document.querySelector('.moves');
 let symbols= ["fa-diamond","fa-paper-plane-o","fa-anchor","fa-bolt","fa-cube","fa-leaf","fa-bicycle","fa-bomb",
 			  "fa-diamond","fa-paper-plane-o","fa-anchor","fa-bolt","fa-cube","fa-leaf","fa-bicycle","fa-bomb"];
 
@@ -111,3 +112,7 @@ var superToggle = function(element, class0, class1) {
 }
 //superToggle(card,"open", "show");
 
+function displayMoves(){
+	
+
+}
