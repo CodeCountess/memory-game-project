@@ -2,6 +2,7 @@
 const theDeck= document.querySelector('.deck');
 const eachCard= document.querySelectorAll('.card');
 const moveCounter= document.querySelector('.moves');
+let moves= 0;
 let symbols= ["fa-diamond","fa-paper-plane-o","fa-anchor","fa-bolt","fa-cube","fa-leaf","fa-bicycle","fa-bomb",
 			  "fa-diamond","fa-paper-plane-o","fa-anchor","fa-bolt","fa-cube","fa-leaf","fa-bicycle","fa-bomb"];
 
@@ -51,6 +52,7 @@ function shuffle(array) {
 function cardClick(evt){
 	//displayCardSymbol();
 	openCardChecker();
+	displayMoves();
 }
 
 theDeck.addEventListener('click', cardClick);
@@ -112,9 +114,8 @@ var superToggle = function(element, class0, class1) {
 }
 //superToggle(card,"open", "show");
 
-function displayMoves(update){
-	moveCounter.innerHTML =update; 
+function displayMoves(){
+	moves+=1; 
+	moveCounter.innerHTML =moves;
 }
 
-displayMoves(100);
-displayMoves(15);
