@@ -50,9 +50,7 @@ function shuffle(array) {
 }
 
 function cardClick(evt){
-	//displayCardSymbol();
 	openCardChecker();
-	displayMoves();
 }
 
 theDeck.addEventListener('click', cardClick);
@@ -86,6 +84,7 @@ function openCardChecker(){
 }
 	
 function lockOpenMatch(){
+	displayMoves();
 	let card1= openCards.splice(1,1).pop();
 	let card2= openCards.splice(0,1).pop();
 	matchedCards.splice(0,0,card1);
@@ -97,6 +96,7 @@ function lockOpenMatch(){
 }
 
 function hideNonMatch(){
+	displayMoves();
 	function clearClasses(){
 		let card1= openCards.splice(1,1).pop();
 		let card2= openCards.splice(0,1).pop();
