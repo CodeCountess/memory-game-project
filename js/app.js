@@ -89,8 +89,8 @@ function lockOpenMatch(){
 	matchedCards.splice(0,0,card2);
 	card1.classList.add("match");
 	card2.classList.add("match");
-	console.log("Matchmaker Matchmaker make me a match!");
-	console.log(matchedCards);
+	// console.log("Matchmaker Matchmaker make me a match!");
+	// console.log(matchedCards);
 }
 
 function hideNonMatch(){
@@ -103,8 +103,6 @@ function hideNonMatch(){
 	setTimeout(clearClasses,600);
 
 }
-
-
 
 // superToggle function by GibboK from https://stackoverflow.com/questions/36544762/vanilla-javascript-is-there-a-way-to-toggle-multiple-css-classes-in-one-stateme
 var superToggle = function(element, class0, class1) {
