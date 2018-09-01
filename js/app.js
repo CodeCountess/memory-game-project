@@ -64,6 +64,11 @@ function openCardChecker(){
 
 	if(userClick.classList.contains('open') && userClick.classList.contains('show') ){
 		console.log("You already clicked it!");
+		userClick.classList.add("warning");
+			function userWarning(){
+				userClick.classList.remove("warning");
+			}
+			setTimeout(userWarning,200);
 
 	} else{ //now you can flip the card
 			 displayCardSymbol();
@@ -118,4 +123,6 @@ function displayMoves(){
 	moves+=1; 
 	moveCounter.innerHTML =moves;
 }
+
+
 
