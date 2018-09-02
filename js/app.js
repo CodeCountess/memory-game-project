@@ -137,9 +137,9 @@ function calculateScore(){
 		if(moves ==16){
 			console.log("Perfect score! 5 stars");
 		} else if(moves ==17 && moves <20){
-			console.log("Not perfect, but close! 4 stars");
+			console.log("Not perfect, but pretty darn close! 4 stars");
 		} else if(moves ==20 && moves <24){
-			console.log("Getting closer, you almost had it! 3 stars");
+			console.log("So close, you almost had it! 3 stars");
 		} else if(moves ==24 && moves <28){
 			console.log("Come ooon! Focus! 2 stars");
 		} else if(moves ==28 && moves <32){
