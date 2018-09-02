@@ -127,15 +127,26 @@ function displayMoves(){
 
 function isWinner(){
 	if(matchedCards.length==16){
-		console.log("its full! you win!");
-		//calculateScore();
+		//console.log("its full! you win!");
 		setTimeout(calculateScore,600);
 	}
 }
 
 function calculateScore(){
-	alert("Idk the score yet, I'll get back to you on that! but you did it in "+moves+" moves");
-
+	// alert("Idk the score yet, I'll get back to you on that! but you did it in "+moves+" moves");
+		if(moves ==16){
+			console.log("Perfect score! 5 stars");
+		} else if(moves ==17 && moves <20){
+			console.log("Not perfect, but close! 4 stars");
+		} else if(moves ==20 && moves <24){
+			console.log("Getting closer, you almost had it! 3 stars");
+		} else if(moves ==24 && moves <28){
+			console.log("Come ooon! Focus! 2 stars");
+		} else if(moves ==28 && moves <32){
+			console.log("Really? Are you even trying? 1 star");
+		} else if( moves >32){
+			console.log("You seriously worry me. 0 stars!");
+		}
 }
 
 
