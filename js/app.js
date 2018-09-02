@@ -149,4 +149,16 @@ function calculateScore(){
 		}
 }
 
+ $("button").click(function(){
+      $(document).ready(function(){
+        $("ul.stars li i:eq(4)").toggleClass("fa-star-o"); //Zero star
+        $("ul.stars li i:eq(3)").toggleClass("fa-star-o");  //1 star
+        $("ul.stars li i:eq(2)").toggleClass("fa-star-o");  //3 star
+        $("ul.stars li i:eq(1)").toggleClass("fa-star-o");  //3 star
+        $("ul.stars li i:eq(0)").toggleClass("fa-star-o"); //4 stars
+        //nothing or default is 5 stars
+      });
+    });
+
+
 
