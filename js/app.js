@@ -97,7 +97,8 @@ function lockOpenMatch(){
 	card1.classList.add("match");
 	card2.classList.add("match");
 	// console.log("Matchmaker Matchmaker make me a match!");
-	// console.log(matchedCards);
+	//console.log(matchedCards);
+	isWinner();
 }
 
 function hideNonMatch(){
@@ -124,6 +125,10 @@ function displayMoves(){
 	moveCounter.innerHTML =moves;
 }
 
-
+function isWinner(){
+	if(matchedCards.length==16){
+		console.log("its full! you win!");
+	}
+}
 
 
