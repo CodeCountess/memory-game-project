@@ -123,6 +123,9 @@ var superToggle = function(element, class0, class1) {
 function displayMoves(){
 	moves+=1; 
 	moveCounter.innerHTML =moves;
+	if(moves==16){
+		fallingStars();
+	}
 }
 
 function isWinner(){
@@ -160,5 +163,8 @@ function calculateScore(){
       });
     });
 
+function fallingStars(){
+	console.log("stars start falling aka score is dropping");
+}
 
 
