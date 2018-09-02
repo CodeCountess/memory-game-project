@@ -128,7 +128,13 @@ function displayMoves(){
 function isWinner(){
 	if(matchedCards.length==16){
 		console.log("its full! you win!");
+		calculateScore();
 	}
+}
+
+function calculateScore(){
+	alert("Idk the score yet, I'll get back to you on that! but you did it in "+moves+" moves");
+
 }
 
 
