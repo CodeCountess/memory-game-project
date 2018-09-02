@@ -107,14 +107,6 @@ h1 {
     display: inline-block;
 }
 
-/*.empty.fa-star:before {
-    content: "\f006";
-}
-
-.full.fa-star:before {
-    content: "\f005";
-}*/
-
 .score-panel .restart {
     float: right;
     cursor: pointer;
