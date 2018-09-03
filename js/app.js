@@ -131,7 +131,7 @@ function displayMoves(){
 function isWinner(){
 	if(matchedCards.length==16){
 		//console.log("its full! you win!");
-		setTimeout(calculateScore,600);
+		//setTimeout(calculateScore,600);
 	}
 }
 
