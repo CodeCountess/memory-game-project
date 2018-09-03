@@ -153,12 +153,14 @@ function fallingStars(){
 }
 
 function starErase(amt){
-	for(let i=0; i<amt; i++){
-		console.log(i);
+	for(let x=0; x <amt ; x++){
+		$("ul.stars li i:eq(x)").removeClass("fa-star");
+		$("ul.stars li i:eq(x)").addClass("fa-star-o");
 	}
+	console.log("your selectors aren't working");
 }
 
-starErase(5);
+starErase(3);
  // $("button").click(function(){
  //      $(document).ready(function(){
  //        $("ul.stars li i:eq(4)").toggleClass("fa-star-o"); //Zero star
