@@ -154,8 +154,8 @@ function fallingStars(){
 
 function starErase(amt){
 	for(let x=0; x <amt ; x++){
-		$("ul.stars li i:eq(x)").removeClass("fa-star");
-		$("ul.stars li i:eq(x)").addClass("fa-star-o");
+		$("ul.stars li i").eq(x).removeClass("fa-star");
+		$("ul.stars li i").eq(x).addClass("fa-star-o");
 	}
 	console.log("your selectors aren't working");
 }
