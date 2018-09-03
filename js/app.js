@@ -139,16 +139,22 @@ function fallingStars(){
 	// alert("Idk the score yet, I'll get back to you on that! but you did it in "+moves+" moves");
 		if(moves ==16){
 			console.log("Perfect score! 5 stars");
+			starErase(0);
 		} else if(moves >16 && moves <=20){
 			console.log("Not perfect, but pretty darn close! 4 stars");
+			starErase(1);
 		} else if(moves >20 && moves <=24){
 			console.log("So close, you almost had it! 3 stars");
+			starErase(2);
 		} else if(moves >24 && moves <=28){
 			console.log("Come ooon! Focus! 2 stars");
+			starErase(3);
 		} else if(moves >28 && moves <=32){
 			console.log("Really? Are you even trying? 1 star");
+			starErase(4);
 		} else if( moves >32){
 			console.log("You seriously worry me. 0 stars!");
+			starErase(5);
 		}
 }
 
@@ -157,23 +163,8 @@ function starErase(amt){
 		$("ul.stars li i").eq(x).removeClass("fa-star");
 		$("ul.stars li i").eq(x).addClass("fa-star-o");
 	}
-	console.log("your selectors aren't working");
 }
 
-starErase(3);
- // $("button").click(function(){
- //      $(document).ready(function(){
- //        $("ul.stars li i:eq(4)").toggleClass("fa-star-o"); //Zero star
- //        $("ul.stars li i:eq(3)").toggleClass("fa-star-o");  //1 star
- //        $("ul.stars li i:eq(2)").toggleClass("fa-star-o");  //3 star
- //        $("ul.stars li i:eq(1)").toggleClass("fa-star-o");  //3 star
- //        $("ul.stars li i:eq(0)").toggleClass("fa-star-o"); //4 stars
- //        //nothing or default is 5 stars
- //      });
- //    });
 
-// function fallingStars(){
-// 	console.log("stars start falling aka score is dropping");
-// }
 
 
