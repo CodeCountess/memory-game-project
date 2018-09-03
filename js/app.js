@@ -123,7 +123,7 @@ var superToggle = function(element, class0, class1) {
 function displayMoves(){
 	moves+=1; 
 	moveCounter.innerHTML =moves;
-	if(moves==16){
+	if(moves >= 16){
 		fallingStars();
 	}
 }
@@ -135,17 +135,17 @@ function isWinner(){
 	}
 }
 
-function calculateScore(){
+function fallingStars(){
 	// alert("Idk the score yet, I'll get back to you on that! but you did it in "+moves+" moves");
 		if(moves ==16){
 			console.log("Perfect score! 5 stars");
-		} else if(moves ==17 && moves <20){
+		} else if(moves >16 && moves <=20){
 			console.log("Not perfect, but pretty darn close! 4 stars");
-		} else if(moves ==20 && moves <24){
+		} else if(moves >20 && moves <=24){
 			console.log("So close, you almost had it! 3 stars");
-		} else if(moves ==24 && moves <28){
+		} else if(moves >24 && moves <=28){
 			console.log("Come ooon! Focus! 2 stars");
-		} else if(moves ==28 && moves <32){
+		} else if(moves >28 && moves <=32){
 			console.log("Really? Are you even trying? 1 star");
 		} else if( moves >32){
 			console.log("You seriously worry me. 0 stars!");
@@ -163,8 +163,8 @@ function calculateScore(){
       });
     });
 
-function fallingStars(){
-	console.log("stars start falling aka score is dropping");
-}
+// function fallingStars(){
+// 	console.log("stars start falling aka score is dropping");
+// }
 
 
