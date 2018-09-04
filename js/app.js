@@ -168,6 +168,7 @@ function starErase(amt){
 	}
 }
 
-
-
+function gameTimer(){
+	console.log("fresh click!");
+}
 
