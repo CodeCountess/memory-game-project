@@ -54,6 +54,7 @@ function cardClick(evt){
 }
 
 theDeck.addEventListener('click', cardClick);
+theDeck.addEventListener('click',gameTimer, once);
 
 function displayCardSymbol(){
 	$( event.target ).toggleClass("open").toggleClass("show");
