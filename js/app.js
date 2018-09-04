@@ -1,6 +1,6 @@
 
 const theDeck= document.querySelector('.deck');
-const eachCard= document.querySelectorAll('.card');
+const theTimer= document.querySelector('.timer');
 const moveCounter= document.querySelector('.moves');
 let moves= 0;
 let symbols= ["fa-diamond","fa-paper-plane-o","fa-anchor","fa-bolt","fa-cube","fa-leaf","fa-bicycle","fa-bomb",
