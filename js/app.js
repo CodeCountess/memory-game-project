@@ -135,6 +135,7 @@ function isWinner(){
 	if(matchedCards.length==16){
 		//console.log("its full! you win!");
 		//setTimeout(calculateScore,600);
+		clearInterval(theClock);
 	}
 }
 
@@ -170,5 +171,10 @@ function starErase(amt){
 
 function gameTimer(){
 	console.log("fresh click!");
+	let theClock= setInterval(myTimer,1000);
+
+}
+function myTimer(){
+	
 }
 
