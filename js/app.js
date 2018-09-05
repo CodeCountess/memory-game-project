@@ -2,6 +2,7 @@
 const theDeck= document.querySelector('.deck');
 const theTimer= document.querySelector('.timer');
 let tickTock;
+let seconds=0;
 let once= { once: true };
 const moveCounter= document.querySelector('.moves');
 let moves= 0;
@@ -175,13 +176,13 @@ function starErase(amt){
 
 function startTimer(){
 	//console.log("fresh click!");
-	//let theClock= setInterval(myTimer,1000);
 	tickTock= setInterval(secondCounter,1000);
 
 }
 
 function secondCounter(){
-	console.log("I'm counting now!");
+	seconds +=1; 
+	
 }
 
 function stopTimer(){
