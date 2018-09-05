@@ -178,7 +178,12 @@ function startTimer(){
 	tickTock= setInterval(secondCounter,1000);
 
 }
+
 function secondCounter(){
 	console.log("I'm counting now!");
+}
+
+function stopTimer(){
+	clearInterval(tickTock);
 }
 
