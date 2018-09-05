@@ -1,4 +1,4 @@
-
+const resetButton= document.querySelector('.restart');
 const theDeck= document.querySelector('.deck');
 const theTimer= document.querySelector('.timer');
 let tickTock;
@@ -6,11 +6,15 @@ let seconds=0;
 let once= { once: true };
 const moveCounter= document.querySelector('.moves');
 let moves= 0;
-let symbols= ["fa-diamond","fa-paper-plane-o","fa-anchor","fa-bolt","fa-cube","fa-leaf","fa-bicycle","fa-bomb",
-			  "fa-diamond","fa-paper-plane-o","fa-anchor","fa-bolt","fa-cube","fa-leaf","fa-bicycle","fa-bomb"];
+let symbols= ["fa-diamond","fa-paper-plane-o","fa-anchor","fa-bolt",
+			  "fa-cube","fa-leaf","fa-bicycle","fa-bomb",
+			  "fa-diamond","fa-paper-plane-o","fa-anchor","fa-bolt",
+			  "fa-cube","fa-leaf","fa-bicycle","fa-bomb"];
 
 let openCards= [];
 let matchedCards= [];
+
+
 
 
 function makeDeck(array){
@@ -186,4 +190,11 @@ function secondCounter(){
 function stopTimer(){
 	clearInterval(tickTock);
 }
+
+resetButton.addEventListener('click', resetGame);
+
+function resetGame(){
+	alert("one day this will work!");
+}
+
 
