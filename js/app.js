@@ -182,7 +182,7 @@ function startTimer(){
 
 function secondCounter(){
 	seconds +=1; 
-	
+	theTimer.innerHTML= "Time"+ seconds;
 }
 
 function stopTimer(){
