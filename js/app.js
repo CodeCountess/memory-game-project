@@ -51,7 +51,7 @@ function shuffle(array) {
     return array;
 }
 
-theDeck.addEventListener('click',gameTimer, once);
+theDeck.addEventListener('click',startTimer, once);
 
 function cardClick(evt){
 	openCardChecker();
@@ -171,7 +171,7 @@ function starErase(amt){
 	}
 }
 
-function gameTimer(){
+function startTimer(){
 	console.log("fresh click!");
 	//let theClock= setInterval(myTimer,1000);
 
