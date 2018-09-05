@@ -51,12 +51,13 @@ function shuffle(array) {
     return array;
 }
 
+theDeck.addEventListener('click',gameTimer, once);
+
 function cardClick(evt){
 	openCardChecker();
 }
 
 theDeck.addEventListener('click', cardClick);
-theDeck.addEventListener('click',gameTimer, once);
 
 function displayCardSymbol(){
 	$( event.target ).toggleClass("open").toggleClass("show");
@@ -135,7 +136,8 @@ function isWinner(){
 	if(matchedCards.length==16){
 		//console.log("its full! you win!");
 		//setTimeout(calculateScore,600);
-		clearInterval(theClock);
+		//clearInterval(theClock);
+		console.log("STOP THE CLOCK");
 	}
 }
 
@@ -171,10 +173,10 @@ function starErase(amt){
 
 function gameTimer(){
 	console.log("fresh click!");
-	let theClock= setInterval(myTimer,1000);
+	//let theClock= setInterval(myTimer,1000);
 
 }
 function myTimer(){
-	
+	console.log("I'm counting now!");
 }
 
