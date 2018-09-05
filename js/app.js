@@ -3,7 +3,6 @@ const theDeck= document.querySelector('.deck');
 const theTimer= document.querySelector('.timer');
 let tickTock;
 let seconds=0;
-
 let once= { once: true };
 const moveCounter= document.querySelector('.moves');
 let moves= 0;
@@ -103,8 +102,6 @@ function lockOpenMatch(){
 	matchedCards.splice(0,0,card2);
 	card1.classList.add("match");
 	card2.classList.add("match");
-	// console.log("Matchmaker Matchmaker make me a match!");
-	//console.log(matchedCards);
 	isWinner();
 }
 
@@ -136,17 +133,13 @@ function displayMoves(){
 }
 
 function isWinner(){
-	if(matchedCards.length==16){
-		//console.log("its full! you win!");
+	if(matchedCards.length==16){	
 		//setTimeout(calculateScore,600);
-		//clearInterval(theClock);
-		//console.log("STOP THE CLOCK");
 		stopTimer();
 	}
 }
 
 function fallingStars(){
-	// alert("Idk the score yet, I'll get back to you on that! but you did it in "+moves+" moves");
 		if(moves ==16){
 			console.log("Perfect score! 5 stars");
 			starErase(0);
