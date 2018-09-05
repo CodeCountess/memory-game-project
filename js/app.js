@@ -176,7 +176,7 @@ function startTimer(){
 	//let theClock= setInterval(myTimer,1000);
 
 }
-function myTimer(){
+function secondCounter(){
 	console.log("I'm counting now!");
 }
 
