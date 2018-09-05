@@ -3,6 +3,7 @@ const theDeck= document.querySelector('.deck');
 const theTimer= document.querySelector('.timer');
 let tickTock;
 let seconds=0;
+
 let once= { once: true };
 const moveCounter= document.querySelector('.moves');
 let moves= 0;
@@ -175,14 +176,18 @@ function starErase(amt){
 }
 
 function startTimer(){
-	//console.log("fresh click!");
 	tickTock= setInterval(secondCounter,1000);
 
 }
 
 function secondCounter(){
 	seconds +=1; 
-	theTimer.innerHTML= "Time"+ seconds;
+	let minutes= Math.floor(seconds/60);
+	let leftover= seconds%60;
+	if(leftover<10){
+		leftover= "0"+leftover;
+	}
+	theTimer.innerHTML= minutes + ":" + leftover;
 }
 
 function stopTimer(){
