@@ -138,7 +138,8 @@ function isWinner(){
 		//console.log("its full! you win!");
 		//setTimeout(calculateScore,600);
 		//clearInterval(theClock);
-		console.log("STOP THE CLOCK");
+		//console.log("STOP THE CLOCK");
+		stopTimer();
 	}
 }
 
