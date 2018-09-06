@@ -194,8 +194,8 @@ function stopTimer(){
 resetButton.addEventListener('click', resetGame);
 
 function resetGame(){
-	alert("one day this will work!");
 	$( '.deck').empty();
+	
 	makeDeck(symbols);
 }
 
