@@ -145,22 +145,22 @@ function isWinner(){
 
 function fallingStars(){
 		if(moves ==16){
-			console.log("Perfect score! 5 stars");
+			console.log("Wowzers! You're a Super Star!");
 			starErase(0);
 		} else if(moves >16 && moves <=20){
-			console.log("Not perfect, but pretty darn close! 4 stars");
+			console.log("Hot Stuff! That was Dynamite!");
 			starErase(1);
 		} else if(moves >20 && moves <=24){
-			console.log("So close, you almost had it! 3 stars");
+			console.log("Yippy Skippy! Bang Up Job!");
 			starErase(2);
 		} else if(moves >24 && moves <=28){
-			console.log("Come ooon! Focus! 2 stars");
+			console.log("Ooh Yeah! Well Done!");
 			starErase(3);
 		} else if(moves >28 && moves <=32){
-			console.log("Really? Are you even trying? 1 star");
+			console.log("That's the Way! You are A-Okay!");
 			starErase(4);
 		} else if( moves >32){
-			console.log("You seriously worry me. 0 stars!");
+			console.log("Zoinks! You'll get it next time!");
 			starErase(5);
 		}
 }
@@ -205,5 +205,6 @@ function resetGame(){
 	matchedCards= [];
 	makeDeck(symbols);
 }
+
 
 
