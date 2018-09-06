@@ -194,6 +194,10 @@ function stopTimer(){
 resetButton.addEventListener('click', resetGame);
 
 function resetGame(){
+	stopTimer();
+	seconds=0;
+	theTimer.innerHTML= "Timer 0:00";
+	
 	$( '.deck').empty();
 	openCards= [];
 	matchedCards= [];
