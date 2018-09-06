@@ -198,6 +198,8 @@ function resetGame(){
 	seconds=0;
 	theTimer.innerHTML= "Timer 0:00";
 	theDeck.addEventListener('click',startTimer, once);
+	moves=0;
+	moveCounter.innerHTML= 0;
 	$( '.deck').empty();
 	openCards= [];
 	matchedCards= [];
