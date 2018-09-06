@@ -197,7 +197,7 @@ function resetGame(){
 	stopTimer();
 	seconds=0;
 	theTimer.innerHTML= "Timer 0:00";
-	
+	theDeck.addEventListener('click',startTimer, once);
 	$( '.deck').empty();
 	openCards= [];
 	matchedCards= [];
