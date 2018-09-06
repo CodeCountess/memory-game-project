@@ -195,7 +195,8 @@ resetButton.addEventListener('click', resetGame);
 
 function resetGame(){
 	$( '.deck').empty();
-	
+	openCards= [];
+	matchedCards= [];
 	makeDeck(symbols);
 }
 
