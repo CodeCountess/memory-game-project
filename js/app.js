@@ -214,7 +214,6 @@ function resetGame(){
 tester.addEventListener('click', announceWinner);
 
 function announceWinner(){
-	alert("its working");
 	winnerModal.style.display = "block";
 }
 
