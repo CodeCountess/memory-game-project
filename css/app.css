@@ -135,9 +135,9 @@ h1 {
 
 /*the modal box and everything inside*/
 .modal-content{
-    width: 60%;
-    padding: 0.8%;
-    border: 5px double #02b3e4;
+    width: 75%;
+    padding: 0;
+    border: 5px double yellow;
     margin: 15% auto;    
     background: #ffffff url('../img/geometry2.png');
     font-family: "Comic Sans MS";
@@ -145,19 +145,24 @@ h1 {
 }
 
 /*Getting more specific inside the sections*/
-.modal-content .modal-header {
-
+.modal-header {
+    
+    color:#02b3e4;
+   
 }
 
-.modal-content .modal-body {
-
+.modal-body {
+    color:#2e3d49;
 }
 
-.modal-content .modal-footer {
+.modal-footer {
+    background-color: #2e3d49;
 
+    line-height: 1;
 }
 
-.modal-content .modal-footer .modal-buttons {
+.modal-buttons {
+   
 
 }
 
