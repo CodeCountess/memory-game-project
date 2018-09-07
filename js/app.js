@@ -13,7 +13,7 @@ let symbols= ["fa-diamond","fa-paper-plane-o","fa-anchor","fa-bolt",
 
 let openCards= [];
 let matchedCards= [];
-const modalBtn= document.getElementById('testModal');
+const tester= document.getElementById('testModal');
 const winnerModal= document.getElementById('winnerModal');
 const modalReplay= document.querySelector('.replay');
 const modalExit= document.querySelector('.exit');
@@ -210,11 +210,13 @@ function resetGame(){
 	makeDeck(symbols);
 }
 
-modalBtn.addEventListener('click', announceWinner);
+// modalBtn.addEventListener('click', announceWinner);
 
-function announceWinner(){
-	//$('#winnerModal').modal();
-	//modal.style.display = "block";
+// function announceWinner(){
+// 	modal.style.display = "block";
+// }
+tester.onclick= function(){
+	winnerModal.style.display= "block";
 }
 
 modalReplay.onclick= function(){
@@ -222,5 +224,5 @@ modalReplay.onclick= function(){
 }
 
 modalExit.onclick= function(){
-	modal.style.display= "none";
+	winnerModal.style.display= "none";
 }
