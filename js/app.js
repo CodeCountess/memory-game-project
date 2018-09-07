@@ -212,5 +212,5 @@ modalBtn.addEventListener('click', announceWinner);
 
 function announceWinner(){
 	//$('#winnerModal').modal();
-	modal.style.display = "block";
+	//modal.style.display = "block";
 }
