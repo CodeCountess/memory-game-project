@@ -13,6 +13,8 @@ let symbols= ["fa-diamond","fa-paper-plane-o","fa-anchor","fa-bolt",
 
 let openCards= [];
 let matchedCards= [];
+const modalBtn= document.getElementById('testModal');
+const winnerModal= document.getElementById('winnerModal');
 
 
 
