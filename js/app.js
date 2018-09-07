@@ -216,3 +216,11 @@ function announceWinner(){
 	//$('#winnerModal').modal();
 	//modal.style.display = "block";
 }
+
+modalReplay.onclick= function(){
+	resetGame();
+}
+
+modalExit.onclick= function(){
+	modal.style.display= "none";
+}
