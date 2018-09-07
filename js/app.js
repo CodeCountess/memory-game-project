@@ -208,5 +208,9 @@ function resetGame(){
 	makeDeck(symbols);
 }
 
+modalBtn.addEventListener('click', announceWinner);
 
-
+function announceWinner(){
+	//$('#winnerModal').modal();
+	modal.style.display = "block";
+}
