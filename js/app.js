@@ -15,6 +15,8 @@ let openCards= [];
 let matchedCards= [];
 const modalBtn= document.getElementById('testModal');
 const winnerModal= document.getElementById('winnerModal');
+const modalReplay= document.querySelector('.replay');
+const modalExit= document.querySelector('.exit');
 
 
 
