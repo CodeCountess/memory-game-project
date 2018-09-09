@@ -144,6 +144,7 @@ function isWinner(){
 	if(matchedCards.length==16){	
 		//setTimeout(calculateScore,600);
 		stopTimer();
+		setTimeout(announceWinner,600);
 	}
 }
 
