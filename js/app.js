@@ -17,6 +17,9 @@ let matchedCards= [];
 const winnerModal= document.getElementById('winnerModal');
 const modalReplay= document.querySelector('.replay');
 const modalExit= document.querySelector('.exit');
+const modalH3= document.getElementById('modal-saying');
+const modalP= document.getElementById('modal-stats');
+
 
 
 
