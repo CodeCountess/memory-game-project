@@ -14,7 +14,6 @@ let symbols= ["fa-diamond","fa-paper-plane-o","fa-anchor","fa-bolt",
 let openCards= [];
 let matchedCards= [];
 
-const tester= document.getElementById('testModal');
 const winnerModal= document.getElementById('winnerModal');
 const modalReplay= document.querySelector('.replay');
 const modalExit= document.querySelector('.exit');
@@ -210,8 +209,6 @@ function resetGame(){
 	matchedCards= [];
 	makeDeck(symbols);
 }
-
-tester.addEventListener('click', announceWinner);
 
 function announceWinner(){
 	winnerModal.style.display = "block";
