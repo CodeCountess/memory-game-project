@@ -135,6 +135,8 @@ h1 {
 /*the modal box and everything inside*/
 .modal-content{
     width: 55%;
+    min-width:300px;
+    max-width: 450px;
     padding: 0;
     border: 5px double yellow;
     margin: 10% auto;    
