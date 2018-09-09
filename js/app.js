@@ -219,6 +219,7 @@ function announceWinner(){
 
 modalReplay.onclick= function(){
 	resetGame();
+	winnerModal.style.display= "none";
 }
 
 modalExit.onclick= function(){
