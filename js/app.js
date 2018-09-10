@@ -187,6 +187,13 @@ function starErase(amt){
 	}
 }
 
+function starReFill(amt){
+	for(let x=0; x <amt ; x++){
+		$("ul.stars li i").eq(x).removeClass("fa-star-o");
+		$("ul.stars li i").eq(x).addClass("fa-star");
+	}
+}
+
 function startTimer(){
 	tickTock= setInterval(secondCounter,1000);
 
@@ -219,6 +226,7 @@ function resetGame(){
 	seconds=0;
 	theTimer.innerHTML= "Timer 0:00";
 	theDeck.addEventListener('click',startTimer, once);
+	starReFill(5);
 	moves=0;
 	moveCounter.innerHTML= 0;
 	$( '.deck').empty();
