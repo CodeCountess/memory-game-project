@@ -193,6 +193,7 @@ function secondCounter(){
 		leftover= "0"+leftover;
 	}
 	theTimer.innerHTML= minutes + ":" + leftover;
+	modalP.innerHTML= "You found all the matches in "+minutes+" minutes and "+leftover+" seconds!";
 }
 
 function stopTimer(){
@@ -215,6 +216,8 @@ function resetGame(){
 }
 
 function announceWinner(){
+	modalH3.innerHTML= "Wowzers! You're a Super Star!";
+	//modalP.innerHTML= "After just "+moves+" moves!";
 	winnerModal.style.display = "block";
 }
 
