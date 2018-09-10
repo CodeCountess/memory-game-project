@@ -19,6 +19,7 @@ const modalReplay= document.querySelector('.replay');
 const modalExit= document.querySelector('.exit');
 const modalH3= document.getElementById('modal-saying');
 const modalP= document.getElementById('modal-stats');
+const modalP2= document.getElementById('modal-moves');
 
 
 
@@ -216,8 +217,7 @@ function resetGame(){
 }
 
 function announceWinner(){
-	// modalH3.innerHTML= "Wowzers! You're a Super Star!";
-	//modalP.innerHTML= "After just "+moves+" moves!";
+	modalP2.innerHTML= "With a grand total of just "+moves+" moves!";
 	winnerModal.style.display = "block";
 }
 
