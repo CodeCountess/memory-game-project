@@ -200,7 +200,12 @@ function secondCounter(){
 		leftover= "0"+leftover;
 	}
 	theTimer.innerHTML= minutes + ":" + leftover;
-	modalP.innerHTML= "You found all the matches in "+minutes+" minutes and "+leftover+" seconds!";
+	if(minutes===1){
+		modalP.innerHTML= "You found all the matches in "+minutes+" minute and "+leftover+" seconds!";
+	}else{
+		modalP.innerHTML= "You found all the matches in "+minutes+" minutes and "+leftover+" seconds!";
+	}
+	
 }
 
 function stopTimer(){
