@@ -147,7 +147,6 @@ function displayMoves(){
 
 function isWinner(){
 	if(matchedCards.length==16){	
-		//setTimeout(calculateScore,600);
 		stopTimer();
 		setTimeout(announceWinner,600);
 	}
@@ -224,7 +223,7 @@ function resetGame(){
 }
 
 function announceWinner(){
-	modalP2.innerHTML= "With a grand total of just "+moves+" moves!";
+	modalP2.innerHTML= "With a grand total of "+moves+" moves!";
 	winnerModal.style.display = "block";
 }
 
