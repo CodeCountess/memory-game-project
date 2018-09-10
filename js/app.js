@@ -20,6 +20,7 @@ const modalExit= document.querySelector('.exit');
 const modalH3= document.getElementById('modal-saying');
 const modalP= document.getElementById('modal-stats');
 const modalP2= document.getElementById('modal-moves');
+const modalP3= document.getElementById('modal-score');
 
 
 
@@ -155,21 +156,27 @@ function isWinner(){
 function fallingStars(){
 		if(moves ==16){
 			modalH3.innerHTML="Wowzers! You're a Super Star!";
+			modalP3.innerHTML="You earned 5 of 5 stars!";
 			starErase(0);
 		} else if(moves >16 && moves <=20){
 			modalH3.innerHTML="Hot Stuff! That was Dynamite!";
+			modalP3.innerHTML="You earned 4 of 5 stars!";
 			starErase(1);
 		} else if(moves >20 && moves <=24){
 			modalH3.innerHTML="Yippy Skippy! Bang Up Job!";
+			modalP3.innerHTML="You earned 3 of 5 stars!";
 			starErase(2);
 		} else if(moves >24 && moves <=28){
 			modalH3.innerHTML="Ooh Yeah! Well Done!";
+			modalP3.innerHTML="You earned 2 of 5 stars!";
 			starErase(3);
 		} else if(moves >28 && moves <=32){
 			modalH3.innerHTML="That's the Way! You are A-Okay!";
+			modalP3.innerHTML="You earned 1 of 5 stars!";
 			starErase(4);
 		} else if( moves >32){
 			modalH3.innerHTML="Zoinks! You'll get it next time!";
+			modalP3.innerHTML="You earned 0 of 5 stars!";
 			starErase(5);
 		}
 }
