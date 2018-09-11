@@ -10,7 +10,6 @@ let symbols= ["fa-diamond","fa-paper-plane-o","fa-anchor","fa-bolt",
 			  "fa-cube","fa-leaf","fa-bicycle","fa-bomb",
 			  "fa-diamond","fa-paper-plane-o","fa-anchor","fa-bolt",
 			  "fa-cube","fa-leaf","fa-bicycle","fa-bomb"];
-
 let openCards= [];
 let matchedCards= [];
 
@@ -22,19 +21,15 @@ const modalP= document.getElementById('modal-stats');
 const modalP2= document.getElementById('modal-moves');
 const modalP3= document.getElementById('modal-score');
 
-
-
-
-
 function makeDeck(array){
 	shuffle(array);
 	
-	var list= document.querySelector('.deck');
+	let list= document.querySelector('.deck');
 
-	for(var i=0; i< array.length; i++){
+	for(let i=0; i< array.length; i++){
 		
-		var item= document.createElement('li');
-		var icon= document.createElement('i');
+		let item= document.createElement('li');
+		let icon= document.createElement('i');
 		
 		item.appendChild(icon);
 		list.appendChild(item);
@@ -53,7 +48,7 @@ makeDeck(symbols);
 
 // Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
-    var currentIndex = array.length, temporaryValue, randomIndex;
+    let currentIndex = array.length, temporaryValue, randomIndex;
 
     while (currentIndex !== 0) {
         randomIndex = Math.floor(Math.random() * currentIndex);
@@ -84,9 +79,11 @@ function openCardChecker(){
 	if(userClick.classList.contains('open') && userClick.classList.contains('show') ){
 		console.log("You already clicked it!");
 		userClick.classList.add("warning");
+
 			function userWarning(){
 				userClick.classList.remove("warning");
 			}
+
 			setTimeout(userWarning,200);
 
 	} else{ //now you can flip the card
@@ -131,11 +128,11 @@ function hideNonMatch(){
 }
 
 // superToggle function by GibboK from https://stackoverflow.com/questions/36544762/vanilla-javascript-is-there-a-way-to-toggle-multiple-css-classes-in-one-stateme
-var superToggle = function(element, class0, class1) {
+let superToggle = function(element, class0, class1) {
   element.classList.toggle(class0);
   element.classList.toggle(class1);
 }
-//superToggle(card,"open", "show");
+//how to call example= superToggle(card,"open", "show");
 
 function displayMoves(){
 	moves+=1; 
