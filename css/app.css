@@ -1,12 +1,15 @@
 html {
     box-sizing: border-box;
+
 }
 
 *,
 *::before,
 *::after {
     box-sizing: inherit;
+
 }
+
 
 html,
 body {
@@ -14,23 +17,30 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+
 }
 
+
 body {
-    background: #ffffff url('../img/geometry2.png'); /* Background pattern from Subtle Patterns */
+    background: #fff url('../img/geometry2.png'); /* Background pattern from Subtle Patterns */
     font-family: 'Coda', cursive;
+
 }
+
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
+
 
 h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+
 }
 
 /*
@@ -49,41 +59,53 @@ h1 {
     justify-content: space-between;
     align-items: center;
     margin: 0 0 3em;
+
 }
+
 
 .deck .card {
     height: 125px;
     width: 125px;
-    background: #2e3d49;
+    background: #333;
     font-size: 0;
-    color: #ffffff;
+    color: #fff;
     border-radius: 8px;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+
 }
+
 
 .deck .card.open {
     transform: rotateY(0);
-    background: #02b3e4;
+    background: #0bd;
     cursor: default;
+
 }
+
 
 .deck .card.show {
     font-size: 33px;
+
 }
+
 
 .deck .card.match {
     cursor: default;
-    background: #02ccba;
+    background: #0cb;
     font-size: 33px;
+
 }
 
-.deck .card.warning{
-    background:#ff6600;
+
+.warning{
+    background: #f60;
+
 }
+
 
 /*
  * Styles for the Score Panel
@@ -93,27 +115,36 @@ h1 {
     text-align: left;
     width: 345px;
     margin-bottom: 10px;
+
 }
+
 
 .score-panel .stars {
     margin: 0;
     padding: 0;
     display: inline-block;
     margin: 0 5px 0 0;
+
 }
+
 
 .score-panel .stars li {
     list-style: none;
     display: inline-block;
+
 }
+
 
 .timer {
    margin-left: 30px;
+
 }
+
 
 .score-panel .restart {
     float: right;
     cursor: pointer;
+
 }
 
 /*
@@ -125,57 +156,71 @@ h1 {
     position: fixed;
     z-index: 1;
     top: 0;
-    left:0;
+    left: 0;
     display: none;
-    width:100%;
+    width: 100%;
     height: 100%;
     background-color: rgba(170, 126,205,0.5);
+
 }
+
 
 /*the modal box and everything inside*/
 .modal-content{
     width: 55%;
-    min-width:300px;
+    min-width: 300px;
     max-width: 450px;
     padding: 0;
     border: 5px double yellow;
     margin: 10% auto;    
-    background: #ffffff url('../img/geometry2.png');
+    background: #fff url('../img/geometry2.png');
     font-family: "Comic Sans MS";
     text-align: center; 
+
 }
+
 
 /*Getting more specific inside the sections*/
 .modal-header { 
     box-sizing: none;
-    margin:0; 
+    margin: 0; 
     font-size: 1.5em;
-    color:#02b3e4; 
+    color: #0bd; 
+
 }
+
 
 .modal-body {
-    color:#2e3d49;
+    color: #333;
 
 }
+
 
 .modal-footer {
-    padding:1% 5%;
-    background-color: #2e3d49;
+    padding: 1% 5%;
+    background-color: #333;
     line-height: 1;
+
 }
+
 
 .modal-buttons {
-   margin:1% 10%;
+   margin: 1% 10%;
    background-color: yellow;
-   font-size:  1em;
+   font-size: 1em;
 
 }
 
+/*Modal buttons*/
 .replay:hover {
     background-color: lime;
+
 }
 
 
 .exit:hover {
     background-color: red;
+
 }
+
+
