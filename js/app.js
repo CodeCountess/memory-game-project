@@ -63,8 +63,11 @@ function shuffle(array) {
 
 theDeck.addEventListener('click',startTimer, once);
 
-function cardClick(evt){
-	openCardChecker();
+function cardClick(){
+	let userClick= event.target;
+	if(userClick.classList.contains('card')){
+		openCardChecker();
+	}
 }
 
 theDeck.addEventListener('click', cardClick);
