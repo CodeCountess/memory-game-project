@@ -79,32 +79,19 @@ function displayCardSymbol(){
 function openCardChecker(){
 	let userClick= event.target;
 
-	if(userClick.classList.contains('open') && userClick.classList.contains('show') ){
-		console.log("You already clicked it!");
-		userClick.classList.add("warning");
-
-			function userWarning(){
-				userClick.classList.remove("warning");
-			}
-
-			setTimeout(userWarning,200);
-
-	} else{ //now you can flip the card
-			 displayCardSymbol();
-			//add it to the array
-			openCards.unshift(userClick);
-			//now its ready to be compared- next filter
-			if(openCards.length==2){
-			//once its in there- make sure only 2
+	if(!userClick.classList.contains('open') && !userClick.classList.contains('show')){
+		openCards.unshift(userClick);
+		displayCardSymbol();
+		if(openCards.length==2){
 			openCards.length=2;
-		 		if(openCards[0].dataset.card == openCards[1].dataset.card){
-					lockOpenMatch();
-			 		}else{
-			 		hideNonMatch();
-						}
-				} 
-					
-		 } 
+			if(openCards[0].dataset.card == openCards[1].dataset.card){
+				lockOpenMatch();
+			}else{
+				hideNonMatch();
+			}
+		}
+
+	}
 }
 	
 function lockOpenMatch(){
