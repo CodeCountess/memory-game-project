@@ -79,9 +79,10 @@ function displayCardSymbol(){
 function openCardChecker(){
 	let userClick= event.target;
 
-	if(!userClick.classList.contains('open') && !userClick.classList.contains('show')){
-		openCards.unshift(userClick);
-		displayCardSymbol();
+	if((!userClick.classList.contains('open') && !userClick.classList.contains('show'))
+		&& openCards.length<2){
+			openCards.unshift(userClick);
+			displayCardSymbol();
 		if(openCards.length==2){
 			openCards.length=2;
 			if(openCards[0].dataset.card == openCards[1].dataset.card){
@@ -90,7 +91,6 @@ function openCardChecker(){
 				hideNonMatch();
 			}
 		}
-
 	}
 }
 	
