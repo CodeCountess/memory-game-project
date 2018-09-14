@@ -84,7 +84,6 @@ function openCardChecker(){
 			openCards.unshift(userClick);
 			displayCardSymbol();
 		if(openCards.length==2){
-			openCards.length=2;
 			if(openCards[0].dataset.card == openCards[1].dataset.card){
 				lockOpenMatch();
 			}else{
